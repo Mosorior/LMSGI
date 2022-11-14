@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario básico</title>
+</head>
+
+<body>
+
+  <h1>Formulario básico</h1>
+  <p>Ejemplo de formulario para comprobar funcionamiento de <code>procesa.php</code>. Pruebe a modificar action a los valores post/get y observe la URL. Recuerde que necesita servidor web con PHP.</p>
+  <p>Y si quiere puede probar con un formulario más completo: <a href="formulario-html5.html">Formulario con nuevos campos HTML</a></p>
+
+  <p> Es necesario que ejecutar en un entorno con servidor con PHP activo. </p>
+   
+  <form action="procesa.php" method="get">
+
+    <p>
+      <label>Usuario <input type="text" name="usuario"></label>
+    </p>
+    <p>
+      <label>Clave <input type="password" name="clave"></label>
+    </p>    
+    <p>
+      <label>Fecha <input type="date" name="fecha"></label>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+    </p>
+  </form>
+
+</body>
+
+</html>
