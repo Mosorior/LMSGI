@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP</title>
+</head>
+<body>
+    <nav>
+        <h2>Índice</h2>
+
+        <ol>
+            <li><a href="../../index.html">Página principal</a></li>
+            <li><a href="../clientes.html">Clientes</a></li>
+            <li><a href="../../docs/Ejercicio final HTML.pdf" target="_blank">PDF</a></li>
+        </ol>
+    </nav>
+
+    <form action="../vip.php" method="get">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <p>
+                <label for="user">User</label>
+            </p>
+            <input type="text" name="user" id="user">
+
+            <p>
+                <label for="clave">Clave</label>
+            </p>
+            <input type="password" name="clave" id="clave" >
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos vehículo</legend>
+
+
+                    <label for="propiedad">En propiedad</label>
+                    <input type="radio" name="tipo" id="propiedad" value="propiedad">
+                    <label for="alquiler">En alquiler</label>
+                    <input type="radio" name="tipo" id="alquiler" value="alquiler">
+
+                    <p>Complementos</p>
+
+                            <label for="Climatizador">Climatizador</label>
+                            <input type="checkbox" name="tipo" id="Climatizador" value="climatizador">
+                            <br>
+                            <label for="Navegador">Navegador</label>
+                            <input type="checkbox" name="tipo" id="Navegador" value="navegador">
+                            <br>
+                            <label for="Navegador">Metalizada</label>
+                            <input type="checkbox" name="tipo" id="Metalizada" value="metalizada">
+                            <br>
+
+
+                    <p>Concesionario</p>
+                        <label>
+                            <input type="text" name="from" list="Concesionario">
+                        </label>
+                        <datalist id="Concesionario">
+                            <option value="Jerez"></option>
+                            <option value="Cádiz"></option>
+                            <option value="Arcos"></option>
+                            <option value="Fuengirola"></option>
+                        </datalist>
+                    <p>Indique sus preferencias:</p>
+                    <textarea name="preferencias" id="preferencias" cols="30" rows="10"></textarea>
+        </fieldset>
+
+
+        <button type="submit" value="Enviar">Enviar</button>
+        <button type="reset" value="Limpiar">Limpiar</button>
+    </form> <!--Cierra la etiqueta form-->
+</body>
+</html>

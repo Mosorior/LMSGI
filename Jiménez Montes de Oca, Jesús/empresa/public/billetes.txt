@@ -1,0 +1,46 @@
+
+Índice
+
+Index: navieras
+Billetes: venta
+Viaje: un ejemplo
+Empresa: sobre nosotros
+
+
+Venta billetes
+
+Datos acceso
+
+Usuario
+email
+
+Password
+
+Datos compra
+Nº de personas que viajan
+
+
+Fecha del viaje 
+
+
+Hora del viaje 
+
+
+Seleccione tipo camarote
+
+Básico 
+Superior
+Suite
+
+Seleccione el tipo de menú (las opciones se le indican en las instrucciones)
+
+sin definir
+Desayuno
+Desayuno y cena
+Desayuno y comida
+Todo incluido<
+
+Tarjeta de crédito 
+
+** Formato: la cadena ES seguida de 2 grupos de 4 dígitos separados por espacios en blanco. Ejemplo: ES 1234 5678
+

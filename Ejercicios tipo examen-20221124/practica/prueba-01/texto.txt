@@ -1,0 +1,33 @@
+Capítulo 1. Introducción
+1.1. ¿Qué es HTML?
+
+Definiéndolo de forma sencilla, "HTML es lo que se utiliza para crear todas las páginas web de Internet". Más concretamente, HTML es el lenguaje con el que se "escriben" la mayoría de páginas web.
+1.1.1 ¿Y el W3C?
+
+A partir de 1996, los estándares de HTML los publica otro organismo de estandarización llamado W3C (World Wide Web Consortium). La versión HTML 3.2 se publicó el 14 de Enero de 1997 y es la primera recomendación de HTML publicada por el W3C. 
+1.2. Breve historia de HTML
+
+La historia completa de HTML es tan interesante como larga, por lo que a continuación se muestra su historia resumida a partir de la información que se puede encontrar en la Wikipedia. 
+Capítulo 2. Características básicas
+2.1. Lenguajes de etiquetas
+
+Uno de los retos iniciales a los que se tuvo que enfrentar la informática fue el de cómo almacenar la información en los archivos digitales. 
+
+Observe como sería las etiquetas de un párrafo:
+Etiqueta de apertura: <p> 
+Etiqueta de cierre: </p> 
+
+Y debe tener cuiddo con algunas entidades: 
+Las que llevan tilde: á, é, que se representan como &aacute;
+El ampersand; & que se representa como & 
+
+Y terminamos con un ejemplo de ejecución en línea de comandos de una sesión ssh:
+
+$ git clone git@gitserver:/opt/git/project.git
+$ vim README
+$ git commit -am 'fix for the README file'
+$ git push origin master
+
+ 
+Y una cita sobre programación de 
+-Siempre programo como si la persona que mantendrá mi código fuera un psicópata que sabe donde vivo. (Martin Golding) 

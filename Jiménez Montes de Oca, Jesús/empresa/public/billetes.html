@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetes</title>
+</head>
+<body>
+    <nav>
+
+        <h2>Indice</h2>
+        <ol>
+            <li><a href="index.html">Index:</a> navieras</li>
+            <li><a href="empresa/public/billetes.html">Billetes:</a> ventas</li>
+            <li><a href="empresa/viaje.html">Viaje:</a> un ejemplo</li>
+            <li><a href="empresa/public/docs/empresa.html">Empresa:</a> sobre nosotros</li>
+        </ol>
+
+    </nav>
+
+    <h2>Venta billetes</h2> 
+
+    <form action="billetes.php" method="get"> 
+        
+        <fieldset> 
+            <legend>Datos acceso</legend> 
+
+            <p>
+                <label for="Usuario">Correo Electrónico</label>
+            </p>
+            <input type="email" name="email" id="email">
+        </p>
+            <label for="Password">Password</label>
+        </p>
+        <input type="Password" name="Password" id="Password">
+           </p>
+
+        </fieldset>
+
+        <fieldset> 
+            <legend>Datos compra</legend>
+
+        <p>
+            <label for="Nº de personas que viajan">Nº de personas que viajan</label>
+        </p>
+        <input type="number" name="Nº de personas que viajan" id="Nº de personas que viajan" min="1" max="100" value="1">
+
+        </p>
+        <label for="Fecha del viaje">Fecha del viaje</label>
+        <input type="date" name="date" id="date">
+
+        </p>
+        <label for="Hora del viaje">Hora del viaje</label>
+        <input type="time" name="time" id="time" value="00:00" id="time">
+        </p>
+
+            <p>
+                Selecione tipo de camarote
+            </p>
+            
+            <ul> 
+                <li>
+                    <label for="básico">Básico</label>
+                    <input type="radio" name="tipo" id="básico" value="básico">
+                </li>
+                <li>
+                    <label for="superior">Superior</label>
+                    <input type="radio" name="tipo" id="superior" value="superior">
+                </li>
+                <li>
+                    <label for="suite">Suite</label>
+                    <input type="radio" name="tipo" id="suite" value="suite">
+                </li> 
+            </ul>
+
+
+            <p>
+                <label for="Seleccione el tipo de menú(las opciones se le indican en las instrucciones)">Seleccione el tipo de menú(las opciones se le indican en las instrucciones)</label>
+            </p>
+            
+            <ul> 
+                <label><input name="from" type="text" placeholder="Sin definir" list="Menú"></label>
+                <datalist id="Menú">
+                  <option value="Desayuno">Desayuno
+                  <option>Desayuno y cena
+                  <option>Desayuno y comida
+                  <option>Todo incluido
+                </datalist>
+                </li> 
+            </ul>
+
+        <p>
+            <label for="cif">Tarjeta de crédito ** Formato: la cadena ES seguida de dos grupos de 4 dígitos separados por espacios en blanco. Ejemplo ES 1234 5678</label> 
+            
+        </p>
+        <input type="text" name="cif" id="cif" pattern="ES-[0-9]{8}">
+        <p>
+
+        </fieldset>
+        <input type="submit" value="Comprar">
+        <input type="reset" value="Borrar datos"> 
+
+    </form> 
+</body>
+</html>

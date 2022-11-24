@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altas</title>
+</head>
+<body>
+    <nav>
+        <h2>Índice</h2>
+
+        <ol>
+            <li><a href="../index.html">Página principal</a></li>
+            <li><a href="altas.html">Altas</a></li>
+            <li><a href="empresa/listado.html">Listado empresas</a></li>
+            <li><a href="../docs/cursos/recursos.html">Recursos</a></li>
+        </ol>
+    </nav> <!--Hasta aqui es igual que l pagina principal-->
+    <h1>Formulario de altas</h1> <!--Primer cambio, el titulo de la pagina en cuestión, en H1-->
+
+    <form action="../altas.php" method="get"> <!--Al ser un formulario, hay que usar form action="documento.php" y method get. 
+        Este documento no tiene que existir, tener en cuenta que form es una etiqueta que luego hay que cerrar-->
+        
+        <fieldset> <!--En los formularios se verán distintos cuadritos separados, estos son los fieldset-->
+            <legend>Altas proveedores</legend> <!--Legend para el titulo del fieldset-->
+
+            <p>
+                <label for="cif">CIF (formato: cadena “ES-” seguida de 4 dígitos)</label> <!--Importante aqui va un label for cif, esto quiere decir
+                que al hacer click en el nombre nos focusee el cuadro y for es para que se focusee el que tenga esa id-->
+            </p>
+            <input type="text" name="cif" id="cif" pattern="ES-[0-9]{4}"> <!--Input tipo texto, con nombre e id, el pattern es lo obligatorio: ES- y luego ya lo que es variable, [0-9], que significa numeros los que sean del 0 al 9 y {4} que significa que deben ser 4-->
+
+            <p>
+                <label for="mesesAlta">Meses de alta (entre 1 y 24)</label>
+            </p>
+            <input type="number" name="mesesAlta" id="mesesAlta" min="1" max="24" value="12"> <!--Otra cosa curiosa, el input tipo number con id y tal, 
+            pero le pone un min, un max y un value que sirve para que sea el default-->
+        </fieldset>
+
+        <fieldset> <!--Otro fieldset-->
+            <legend>Altas clientes</legend>
+
+            <p>
+                <label for="email">Correo Electrónico</label>
+            </p>
+            <input type="email" name="email" id="email"> <!--Todo email. el for del label, el input type, el name... todo-->
+
+            <p>
+                Tipo Cliente
+            </p>
+            
+            <ul> <!--Lista desordenada, esta es facil-->
+                <li>
+                    <label for="local">Local</label>
+                    <input type="radio" name="tipo" id="local" value="local">
+                </li>
+                <li>
+                    <label for="regional">Regional</label>
+                    <input type="radio" name="tipo" id="regional" value="regional">
+                </li>
+                <li>
+                    <label for="nacional">Nacional</label>
+                    <input type="radio" name="tipo" id="nacional" value="nacional">
+                </li> <!--Los 3 son radio, nape tipo y la id depende de cada uno, ademas del value-->
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos comunes</legend>
+
+            <p>
+                <label for="satisfaccion">Indique su satisfacción con la atención recibida</label>
+            </p>
+            
+            <span>1</span>
+            <input type="range" name="satisfaccion" id="satisfaccion" min="1" max="5">
+            <span>5</span> <!--Este es complicado, es un input tipo rango, con un span arriba con el minimo y otro abajo, pero estos son para mostrarlos por pantalla, el verdadero valor min y max se encuentran en la propia linea del input-->
+
+            <div>
+                <input type="checkbox" name="acepta" id="acepta" required>
+                <label for="acepta">Acepta condiciones de registro (obligatorio)</label>
+            </div> <!--Lo unico a destacar es que mete lo de acepta en un div-->
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar"> 
+    </form> <!--Cierra la etiqueta form-->
+</body>
+</html>

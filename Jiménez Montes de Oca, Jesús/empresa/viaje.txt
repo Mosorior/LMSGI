@@ -1,0 +1,70 @@
+Índice
+Index: navieras
+Billetes: venta
+Viaje: un ejemplo
+Empresa: sobre nosotros
+
+Aviso: este código se maquetará usando HTML. Ejemplo:
+
+    <p class="novedad"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <h3> Ejemplo de cabecera </h3>
+     
+Y se aplicarán estilos CSS similares a estos:
+
+        h1 {
+            color: red;
+        }
+        p {
+            font-style: italic;
+        }
+    
+Cronica de viajes
+
+Mi viaje de ensueño
+
+Esta es la crónica de nuestro viaje. Se desarrolo en dos grandes etapas. Vamos a verlo poco a poco. Y para empezar un ídice sobre lo que vamos a ver:
+
+Primera etapa
+Norte
+Sur
+Zona de costa
+Zona de sierra
+Segunda Etapa
+Primera etapa
+
+
+texto de relleno Quas eligendi, perspiciatis possimus numquam cumque eaque fugit totam omnis quae, a harum qui ad asperiores consectetur et autem natus ullam vitae labore. Eum aliquam amet quidem. Sequi, cumque a!
+
+texto de relleno Quia illum laudantium est! Esse qui eaque inventore aliquam dolorem sequi eveniet molestiae voluptas ad eius. Tenetur, maxime minus corrupti non exercitationem rerum necessitatibus cupiditate velit sed iste sunt dolor.
+
+Recorriendo el norte
+
+
+Recorriendo el sur
+
+texto de relleno Quas eligendi, perspiciatis possimus numquam cumque eaque fugit totam omnis quae, a harum qui ad asperiores consectetur et autem natus ullam vitae labore. Eum aliquam amet quidem. Sequi, cumque a!
+
+texto de relleno Quia illum laudantium est! Esse qui eaque inventore aliquam dolorem sequi eveniet molestiae voluptas ad eius. Tenetur, maxime minus corrupti non exercitationem rerum necessitatibus cupiditate velit sed iste sunt dolor.
+
+En la zona de costa
+
+texto de relleno Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro, necessitatibus dolorum optio facere illum aliquid deserunt cum at perspiciatis dolore doloremque assumenda omnis natus, accusamus voluptatum quidem soluta neque!
+
+texto de relleno Impedit ullam assumenda veritatis molestias numquam minima, unde, molestiae nemo cupiditate, illum eligendi quas! Ullam adipisci reprehenderit soluta dignissimos voluptas vitae provident tempora accusamus eum! Rerum veniam dicta quod ducimus.
+
+
+En la zona de sierra
+
+texto de relleno Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro, necessitatibus dolorum optio facere illum aliquid deserunt cum at perspiciatis dolore doloremque assumenda omnis natus, accusamus voluptatum quidem soluta neque!
+
+texto de relleno Impedit ullam assumenda veritatis molestias numquam minima, unde, molestiae nemo cupiditate, illum eligendi quas! Ullam adipisci reprehenderit soluta dignissimos voluptas vitae provident tempora accusamus eum! Rerum veniam dicta quod ducimus.
+
+
+Segunda etapa
+
+
+texto de relleno Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro, necessitatibus dolorum optio facere illum aliquid deserunt cum at perspiciatis dolore doloremque assumenda omnis natus, accusamus voluptatum quidem soluta neque!
+
+texto de relleno Impedit ullam assumenda veritatis molestias numquam minima, unde, molestiae nemo cupiditate, illum eligendi quas! Ullam adipisci reprehenderit soluta dignissimos voluptas vitae provident tempora accusamus eum! Rerum veniam dicta quod ducimus.
+
+
