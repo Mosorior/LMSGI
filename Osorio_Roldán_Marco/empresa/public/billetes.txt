@@ -1,0 +1,45 @@
+Cómo movernos por este sitio web
+
+Index: navieras
+Billetes: venta
+Viaje: un ejemplo
+Empresa: sobre nosotros
+
+
+Venta billetes
+
+
+Usuario
+email
+
+Password
+ * longitud mínima 10 caracteres
+
+Datos compra
+Nº de personas que viajan (grupos máximo de 4)
+
+Fecha del viaje 
+
+
+Hora del viaje 
+
+
+Seleccione tipo camarote
+Básico 
+Superior
+Suite
+
+Seleccione el tipo de menú (las opciones se le indican en las instrucciones)
+
+sin definir
+Desayuno
+Desayuno y cena
+Desayuno y comida
+Todo incluido
+
+Tarjeta de crédito ** Formato: la cadena ES seguida de 1 grupo de 4 dígitos y 1 grupo de 4 letras separados por un espacio en blanco. Ejemplo: ES 1234 aBcD
+
+
+ Acepto las condiciones legales (**obligatorio)
+
+ 

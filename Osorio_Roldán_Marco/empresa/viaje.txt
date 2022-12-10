@@ -1,0 +1,80 @@
+
+Cómo movernos por este sitio web
+
+Index: navieras
+Billetes: venta
+Viaje: un ejemplo
+Empresa: sobre nosotros
+
+
+Aviso: este código se maquetará usando HTML. Ejemplo:
+
+ 
+    <p class="novedad"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <h3> Ejemplo de cabecera </h3>
+     
+Y se aplicarán estilos CSS similares a estos:
+
+
+        h1 {
+            color: red;
+        }
+        p {
+            font-style: italic;
+        }
+    
+
+Cronica de viajes
+
+Mi viaje de ensueño
+
+Esta es la crónica de nuestro viaje. Se desarrolo en dos grandes etapas. Vamos a verlo poco a poco. Y para empezar un ídice sobre lo que vamos a ver:
+
+Primera etapa
+Norte
+Sur
+Zona de costa
+Zona de sierra
+Segunda Etapa
+
+
+Primera etapa
+
+texto de relleno 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum consequuntur similique reprehenderit fugit aliquid eligendi corrupti, magni sint repudiandae placeat ipsum provident harum consequatur? Ducimus ratione praesentium laboriosam asperiores eius possimus quia cumque ex, modi ad officiis nemo laborum esse repellendus commodi consequuntur, molestias fugiat! Voluptatibus consequuntur a laborum explicabo earum quis commodi harum error recusandae. Dicta fuga similique incidunt earum, praesentium quisquam perspiciatis perferendis quis velit rem cumque voluptates dolorum deleniti tempora illum quae ad assumenda amet reiciendis. Dolor itaque laudantium accusamus perferendis laborum velit blanditiis facilis assumenda. Magnam veritatis nulla facilis aperiam optio maxime fugit esse? Alias!
+
+Recorriendo el norte
+
+
+Recorriendo el sur
+
+texto de relleno 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia iusto, accusamus neque suscipit officiis, dignissimos blanditiis optio voluptatibus voluptates nobis corrupti cum ipsum nihil eos natus, adipisci doloribus ab itaque tempore tempora nostrum hic quia? Perferendis ex, quidem quo dicta voluptatibus veritatis, tempora voluptatum, neque deleniti commodi ea sint voluptate ut? Officia libero quas laudantium numquam eligendi animi molestiae aut. Voluptates ipsa voluptate quisquam libero, ex quae nesciunt sequi, et sunt obcaecati, quis est. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis tenetur assumenda at sapiente ratione error, voluptatum rem, libero a tempore ad nemo? Nihil iusto, iste repudiandae voluptatem tempore provident id cum exercitationem error quidem? Est omnis quasi nam quas. Neque quaerat repudiandae repellat delectus deleniti, possimus fugit porro molestiae ex.
+
+En la zona de costa
+
+texto de relleno 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut impedit reprehenderit cumque, quis unde assumenda corrupti itaque tenetur id veniam minima voluptatibus autem molestiae laborum saepe quo ut dicta quia sed veritatis aperiam fugit. Perferendis illo, iusto numquam consequuntur vel aliquid cupiditate totam eligendi id harum debitis voluptate ratione necessitatibus fugit deserunt dolores ipsam facilis quae fugiat officiis dolore aspernatur voluptatem recusandae? Fugit aperiam blanditiis voluptas unde iusto? Perspiciatis architecto adipisci fugit harum fugiat molestiae eveniet consequuntur unde possimus sit animi culpa fuga, error quod assumenda dolorem quisquam porro. Earum quidem ad odit cum debitis mollitia.
+
+texto de relleno 
+Quibusdam ipsum minus, vitae adipisci quisquam porro dolorum consequatur, expedita tempora dicta nisi eaque? Aliquam, vel officia ad dolor eaque recusandae quos commodi modi ipsum magni unde nesciunt. Debitis officiis illo quo at architecto aliquid laborum dolor. Provident magni pariatur reprehenderit nam ex aliquam ipsum sed exercitationem architecto eaque magnam quo aperiam possimus unde, tenetur vero. Numquam iste molestias impedit quaerat accusantium facere cum nam vel beatae dignissimos voluptate, tempore exercitationem cupiditate velit ad animi possimus quibusdam quod laboriosam, laudantium facilis repellendus quo.
+
+algarve
+
+En la zona de sierra
+
+texto de relleno 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro, necessitatibus dolorum optio facere illum aliquid deserunt cum at perspiciatis dolore doloremque assumenda omnis natus, accusamus voluptatum quidem soluta neque!
+
+texto de relleno 
+Impedit ullam assumenda veritatis molestias numquam minima, unde, molestiae nemo cupiditate, illum eligendi quas! Ullam adipisci reprehenderit soluta dignissimos voluptas vitae provident tempora accusamus eum! Rerum veniam dicta quod ducimus.
+
+
+Segunda etapa
+
+texto de relleno 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro, necessitatibus dolorum optio facere illum aliquid deserunt cum at perspiciatis dolore doloremque assumenda omnis natus, accusamus voluptatum quidem soluta neque!
+
+texto de relleno 
+Impedit ullam assumenda veritatis molestias numquam minima, unde, molestiae nemo cupiditate, illum eligendi quas! Ullam adipisci reprehenderit soluta dignissimos voluptas vitae provident tempora accusamus eum! Rerum veniam dicta quod ducimus.
+

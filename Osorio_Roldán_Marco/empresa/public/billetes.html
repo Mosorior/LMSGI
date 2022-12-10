@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetes</title>
+</head>
+<body>
+    <nav>
+
+        <h2>Como movernos por este sitio web</h2>
+        <ol>
+            <li><a href="../../index.html">Index:</a> navieras</li>
+            <li><a href="../public/billetes.html">Billetes:</a> ventas</li>
+            <li><a href="../viaje.html">Viaje:</a> un ejemplo</li>
+            <li><a href="../public/docs/empresa.html">Empresa:</a> sobre nosotros</li>
+        </ol>
+
+    </nav>
+
+    <h2>Venta billetes</h2> 
+
+    <form action="billetes.php" method="get"> 
+        
+        <fieldset> 
+            <legend>Datos acceso</legend> 
+
+            <p>
+                <label for="Usuario">Correo Electrónico</label>
+            </p>
+            <!--type="email" para que se detecte que es una casilla para insertar una dirección de correo electrónico-->
+            <input type="email" name="email" id="email">
+        </p>
+            <label for="Password">Password</label>
+        </p>
+        <!--type="Password" para que la casilla sea de tipo contraseña y no aparezca lo que se escribe.-->
+        <input type="Password" name="Password" id="Password" min="10">
+           </p>
+
+        </fieldset>
+
+        <fieldset> 
+            <legend>Datos compra</legend>
+
+        <p>
+            <label for="Nº de personas que viajan">Nº de personas que viajan (grupos máximo de 4)</label>
+        </p>
+        <!--type="number" porque lo que se va a ingresar es un número y min="1" max="4" para que el número que se introduzca esté comprendido entre 1 y 4.-->
+        <input type="number" name="Nº de personas que viajan" id="Nº de personas que viajan" min="1" max="4" value="1">
+
+        </p>
+        <label for="Fecha del viaje">Fecha del viaje</label>
+        <!--type="date" porque es una fecha-->
+        <input type="date" name="date" id="date">
+
+        </p>
+        <label for="Hora del viaje">Hora del viaje</label>
+        <!--type="time" porque es formato de hora-->
+        <input type="time" name="time" id="time" value="00:00" id="time">
+        </p>
+
+            <p>
+                Selecione tipo de camarote
+            </p>
+            
+            <ul> 
+                <li>
+                    <!--Una lista con 3 casillas type="radio" para que sea un círculo del cual solo se puede elegir uno y sus correspondientes labels para el texto.-->
+                    <label for="básico">Básico</label>
+                    <input type="radio" name="tipo" id="básico" value="básico">
+                </li>
+                <li>
+                    <label for="superior">Superior</label>
+                    <input type="radio" name="tipo" id="superior" value="superior">
+                </li>
+                <li>
+                    <label for="suite">Suite</label>
+                    <input type="radio" name="tipo" id="suite" value="suite">
+                </li> 
+            </ul>
+
+
+            <p>
+                <label for="Seleccione el tipo de menú(las opciones se le indican en las instrucciones)">Seleccione el tipo de menú(las opciones se le indican en las instrucciones)</label>
+            </p>
+            
+            <ul> 
+                <!--Entrada de tipo texto con las entradas definidas en las opciones. Para que aparezca por defecto "Sin definir" se coloca esto dentro de un placeholder en el input.-->
+                <label><input name="from" type="text" placeholder="Sin definir" list="Menú"></label>
+                <datalist id="Menú">
+                  <option value="Desayuno">Desayuno
+                  <option value="DesayunoYCena">Desayuno y cena
+                  <option value="DesayunoyComida">Desayuno y comida
+                  <option value="TodoIncluido">Todo incluido
+                </datalist>
+                </li> 
+            </ul>
+
+        <p>
+            <label for="tarjetacredito">Tarjeta de crédito ** Formato: la cadena ES seguida de 1 grupo de 4 dígitos y 1 grupo de 4 letras separados por un espacio en blanco. Ejemplo: ES 1234 aBcD</label> 
+            
+        </p>
+        <!--Un input de tipo texto con el patrón ES-[0-9]{4}-[A-Z]{4} que hace que el texto introducido tenga que tener un patrón de "ES" seguido de 4 números del 0 al 9 y 4 letras de la A a la Z.-->
+        <input type="text" name="tarjetacredito" id="tarjetacredito" pattern="ES-[0-9]{4}-[A-Z]{4}">
+        <p>
+
+        </fieldset>
+        <input type="submit" value="Comprar">
+        <input type="reset" value="Borrar datos"> 
+
+    </form> 
+</body>
+</html>

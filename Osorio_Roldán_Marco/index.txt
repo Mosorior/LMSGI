@@ -1,0 +1,22 @@
+
+Cómo movernos por este sitio web
+Index: navieras
+Billetes: venta
+Viaje: un ejemplo
+Empresa: sobre nosotros
+
+
+Rutas turísticas por las Islas Griegas
+
+En la siguiente figura tiene un resumen de las navieras que viajan a las islas. Solo están adjudicadas las que se tienen iconos,
+
+
+Debajo de la figura debe aparecer la tabla HTML que representa la misma información que la imagen previa. Las imágenes debe enlazar a las páginas web de las compañias:
+
+lorem-ipsum.com
+y
+inter-shippping.com
+
+Y como dice el profesor del módulo
+
+Olvida la presentación y ten en cuenta solo la semántica, el significado de los datos.

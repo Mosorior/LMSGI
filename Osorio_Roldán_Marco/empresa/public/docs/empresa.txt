@@ -1,0 +1,16 @@
+Cómo movernos por este sitio web
+Index: navieras
+Billetes: venta
+Viaje: un ejemplo
+Empresa: sobre nosotros
+
+
+Cómo localizarnos
+Mail:
+info@summertime.com
+Web
+www.summertime.com
+Teléfonos
+956 121212
+666 123123
+Maps:icono con enlace a localización
