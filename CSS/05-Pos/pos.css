@@ -1,0 +1,30 @@
+section {
+  border: blue dotted 5px;
+  margin: 20px 0;
+}
+
+img.relativa {
+  border: 6px solid yellow;
+  position: relative;
+  top: 200px;
+  left: 200px;
+}
+
+img.absoluta {
+  position: absolute; 
+  top: 200px;
+  left: 200px;
+  border: 6px solid orange;
+} 
+
+/* Indico que es relativo para fijarlo como origen del 
+  desplazamiento absoluto de la imagen que hay dentro de #anexos
+  */ 
+#anexos {
+  position: relative;
+}
+/* color diferente para distinguirla las dos imágenes con
+   posicionamiento absoluto  */
+#anexos img.absoluta {
+  border: 6px solid lime;
+}

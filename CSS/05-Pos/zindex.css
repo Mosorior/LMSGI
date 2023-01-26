@@ -1,0 +1,23 @@
+p {
+    border: 2px solid red;
+    position: absolute;
+    width: 60%;
+    background-color: lightgoldenrodyellow;
+}
+
+
+p:nth-of-type(1) {
+    top: 100px;
+    left: 100px;
+    background-color: aquamarine;
+}
+p:nth-of-type(2) {
+    top: 230px;
+    left: 230px;
+    z-index: 10;
+    background-color: lightsalmon;
+}
+p:nth-of-type(3) {
+    top: 260px;
+    left: 160px;
+}
