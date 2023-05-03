@@ -1,0 +1,77 @@
+/* avanzados.css */
+h1 {
+    color: blue;
+}
+
+/* selector hijo */
+section > p {
+    color:red;
+}
+/* selectyor descendente */
+section p {
+    font-style: italic;
+}
+
+
+/* selector adyacente "agrupado*/
+h2 + p, h3 + p {
+  text-decoration: underline;
+}
+/* h3 + p {
+    text-decoration: underline;
+} */
+
+/* ojo con adyancente: deben ser hermanos, al mismo nivel */ 
+article + h3 {
+  color: green;
+}
+
+
+/* atributos */
+[href] {
+    font-weight: bold;
+}
+[href="http://www.uca.es"] {
+    border: 2px solid green;
+}
+
+[title] {
+    border: 2px solid blue;
+}
+
+[href^="https://"] {
+    border: 6px dotted green;
+}
+
+[href*="//www.uca.es"] {
+    font-size: 200%;
+}
+
+/* solución actual */
+[href $= ".pdf"], [href $= ".PDF"]{
+   border-top: 4px red solid;
+}
+
+/* solución "del pasado" */
+.pdf {
+   border-top: 4px red solid;   
+}
+
+
+
+
+
+
+
+
+/* Cuidadito con usar el selector de atrubuto con class */
+
+/* No se aplicaría a class="novedad resumen" */
+[class="novedad"] {
+  color: red;
+}  
+
+/* SÍ se aplicaría a class="novedad resumen" */
+.novedad {
+ color: red;
+}

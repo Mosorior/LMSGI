@@ -1,0 +1,27 @@
+/* table-cell.css */
+
+* {
+  /* Resuelve problema cálculo % width incluiría  border y padding.. */
+  box-sizing: border-box;
+}
+
+/* creo tres celdas en zona central */
+aside,
+nav {
+  display: table-cell;
+  width: 25%;
+}
+
+article {
+  display: table-cell;
+  width: 50%;
+}
+
+/* evita que las celdas se superpongan con elemento previos o posteriores,
+  similar a caso en float.css. En este caso serían 
+  el p de header y el h2 de footer
+*/
+header, footer {
+  overflow: auto; 
+}
+

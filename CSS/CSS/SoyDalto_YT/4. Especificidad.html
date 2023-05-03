@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad</title>
+    <link rel="stylesheet" type="text/css" href="4. Especificidad.css">
+</head>
+<body>
+    <b>texto en 'b'</b>
+
+
+    <p class="colorred" id="pk">Párrafo con id="pk"</p>
+    <p class="colorred" id="pk">Párrafo con id="pk"</p>
+    <h1>Título h1</h1>
+    <h1 class="colorred">Título h1 con class="colorred"</h1>
+    <h2>Titulo h2</h2>
+    <h2 class="colorred">Título h2 con class="colorred"</h2>
+    <p class="colorred" id="pk">Párrafo con id="pk"/class="colorred"</p>
+    <p class="colorred" id="pk">Párrafo con id="pk"/class="colorred"</p>
+    <p class="colorred" id="pk" style="color: brown;">Párrafo con id="pk"/class="colorred"/style="color: brown;</p>
+    <p class="colorred" id="pk" style="color: brown;">Párrafo con id="pk"/class="colorred"/style="color: brown;</p>
+    <p class="important" id="pk" style="color: brown;">Párrafo con id="pk"/class="important"/style="color: brown;</p>
+    <!--
+        aún estando, en el css, h2 como último no se tiene en cuenta, ya que la clase es una jerarquía mucho mayor que el simple elemento, por ello no se escribe en verde este título
+        el id va antes que el propio elemento y que las clases, es por ello que en este caso no cambia a otro color aún teniendo una clase asociada a algún estilo
+        el estilo en línea vaantes que todos los mencionados por tanto lo que se escriba en el código html será lo que se quede antes que todos los dados
+        vemos que el último p aún siendo estilo en línea esta atribuido su color por una clase, no un aclase cualquiera, es una clase !important por lo que esta iría por encima de todo
+        EL ESTILO CAMBIA CUANDO A SU SIGUIENTE SE ENCUENTRA CON UNA REGLA DE SU MISMA JERARQUÍA O SI SE ENCUENTRA CON UNA JERARQUÍA MAYOR A ÉL, UNA JERARQUÍA MENOR NUNCA SE TENDRÁ EN CUENTA
+    -->
+
+
+
+</body>
+</html>

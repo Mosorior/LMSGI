@@ -1,0 +1,14 @@
+section {
+    font-style: italic;
+    border: 2px red solid;
+}
+
+.revisar {
+    color: grey;
+}
+
+section p {
+    color: blue;
+    font-weight: bold;
+    border: 2px red solid;
+}

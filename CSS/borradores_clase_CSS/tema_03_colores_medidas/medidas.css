@@ -1,0 +1,23 @@
+/* absolutas: poco usadas */
+
+/* h1 {
+    font-size: 1cm;
+}
+
+p {
+    margin-left: 20mm;
+    margin-right: 2in;
+} */
+
+/* absoluta: pt */
+
+/* relativas */
+
+p {
+    font-size: 200%;
+    margin-left: 2em;
+    width: 50%;
+}
+section {
+    width: 600px;
+}

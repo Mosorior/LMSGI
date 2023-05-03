@@ -1,0 +1,46 @@
+/* texto.css */
+
+/* color y font-family */
+section h1 {
+    color: blue;
+
+    /* en debian */
+    font-family: "Z003", "DejaVu Serif", Quicksand, Lato, serif; 
+
+    /* genéricas: serif, sans-serif, cursive, fantasy, monospace */
+}
+
+/* font-size:  */
+section p {
+    font-size: large;
+}
+
+/*  font-weight y  font-style */
+section strong {
+    font-weight: normal;
+    background-color: yellow;
+    font-style: italic;
+}
+
+section em {
+    font-style: normal;
+    font-weight: bold;
+    background-color: cyan;
+}
+
+/* text-transform  */
+article h2 {
+    text-transform: capitalize;  /* uppercase | lowercase | capitalize */
+    background-color: lime;
+}
+
+/* font-variant: 
+  - las minúsculas pasan a versales  (small-caps)
+  - las mayúsculas se quedan igual */
+article strong {
+    font-variant: small-caps;
+}
+
+article blockquote {
+    font: italic bold 2em/0.75em monospace;
+}

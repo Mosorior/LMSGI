@@ -1,0 +1,43 @@
+/* inline-blocks.css */
+
+/* Ojo con problema espacios entre bloques..
+  los muestra en pantalla al hacer los bloques inline, y descuadra el layout
+  Consultar: https://davidwalsh.name/remove-whitespace-inline-block
+*/
+
+/* uno de los trucos para problema espacios con inline-blocks */
+#contenedor {
+  font-size: 0;
+}
+nav,
+aside,
+article,
+header,
+footer {
+  font-size: 16px;
+}
+
+/* layout con inline-blocks */
+* {
+  box-sizing: border-box;
+}
+aside,
+nav {
+  display: inline-block;
+  vertical-align: top; /* por defecto baseline */
+  width: 25%;
+}
+
+article {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* evita se superpongan con elemento previos o posteriores,
+  similar a caso en float.css. En este caso serían 
+  el p de header y el h2 de footer
+*/
+header, footer {
+  overflow: auto; 
+}

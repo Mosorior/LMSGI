@@ -1,0 +1,48 @@
+/* contador.css */
+
+/* 1: definir contador en el contenedor de lo que quiero contar... */
+
+section {  /* modificar para reset en body o section y ver diferencia */
+    counter-reset: nParrafo;
+}
+
+/* 2: dónde se incrementa */
+section p {
+    counter-increment: nParrafo;
+}
+
+/* 3: dónde se muestra el contador */
+/* section p::before {
+    content: " (" counter(nParrafo) ")";
+    font-weight: bold;
+    color: red;
+} */
+
+/* 3: dónde se muestra el contador : sólo en impares */
+
+section p::before {
+    /* modificadso para ejerciio */
+    content: " (" counter(nSection) "." counter(nParrafo) ")";
+    font-weight: bold;
+    color: red;
+}
+
+/* 3: dónde se muestra el contador : al final de la sección */
+
+section::after {
+    content: " Total párrafos section: " counter(nParrafo);
+    font-weight: bold;
+    color: red;
+}
+
+
+/* de ejercio propuesto 
+  añadir a cada párrafo el número de sección */
+
+body {
+    counter-reset: nSection;
+}
+
+section {
+    counter-increment: nSection;
+}

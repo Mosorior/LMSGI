@@ -1,0 +1,88 @@
+/* rwd.css */
+
+
+/* defino areas de grid */
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* primer layout */
+#contenedor {
+    background-color: yellow;
+}
+
+#contenedor > *  {
+    border: 4px red double;
+}
+
+/* segundo layout: 
+   672px */
+@media screen and (min-width: 672px) {
+
+    #contenedor {
+        background-color: cyan;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "header    header"
+        "nav       aside "
+        "section   section"
+        "footer    footer "
+        ;
+    }  
+
+    
+}
+
+/* tercer layout :992px */
+@media screen and (min-width: 992px) {
+
+    #contenedor {
+        background-color: cyan;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "section  section   footer"
+        "section  section   footer "  
+        "nav      header    header"
+        "nav      aside     aside "
+        ;
+    
+    }
+    
+}
+
+/* ejercicio: añadir nuevo punto ruptura
+   a 1100px
+      - 4 columnas
+      - color de fondo distino */
+
+@media screen and (min-width: 1100px) {
+
+    #contenedor {
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-template-areas: 
+        "nav      header    header   aside"
+        "nav      header    header   aside"
+        "section  section   footer  footer"
+        "section  section   footer  footer"  
+
+        ;
+    }
+}

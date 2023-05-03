@@ -1,0 +1,13 @@
+.inline {
+    display: inline;   /*declara la etiqueta como una etiqueta en línea*/
+    height: 400px;     
+    width: 190px;
+/*a los elementos en línea no se le aplicarán ningún cambio ya que su tamaño se basa en el tamaño de la letra no de los pixeles*/
+}
+
+.block {
+    display: block;    /*declara la etiqueta como una etiqueta en bloque*/
+    height: 400px;
+    width: 190px;
+/*a los eleemntos en bloque si podremos cambiarle estos valores*/
+}

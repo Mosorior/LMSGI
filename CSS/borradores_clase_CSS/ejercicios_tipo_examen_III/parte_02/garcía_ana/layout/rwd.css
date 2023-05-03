@@ -1,0 +1,73 @@
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+/* section */
+#container > section  {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
+}
+
+aside {
+  grid-area: aside;
+}
+
+/* primer layout */
+#container>* {
+  border: blue dashed 6px;
+  padding: 1em;
+}
+
+
+
+@media (min-width: 740px) {
+  #container {
+    background-color: salmon;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas:
+      "header    nav"
+      "section   section "
+      "footer    aside";
+  }
+}
+
+@media (min-width: 920px) {
+  #container {
+    background-color: lightgreen;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "section   nav"
+    "section   header "
+    "section   aside"
+    "footer    aside";
+
+  }
+}
+
+@media (min-width: 1120px) {
+  #container {
+    background-color: lightpink;
+  }
+
+  section#ppal {
+  /* #container > section { */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section > h2 {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+
+
+}

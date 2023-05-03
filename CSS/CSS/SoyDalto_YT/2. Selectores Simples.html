@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Simples</title>
+    <link rel="stylesheet" type="text/css" href="2. Selectores Simples.css">
+    <link rel="stylesheet" type="text/css" href="2, Organizador.css">
+</head>
+<body>
+    <article>
+        <section style="background-color:  white;">
+            ETIQUETAS
+            <h1>Título h1 sin nada asociado</h1>
+            <p>
+                Párrafo sin nada asociado
+            </p>
+            <h2>Título h2 sin nada asociado</h2>
+            <p>
+                Párrafo sin nada asociado
+            </p>
+            <input type="text" value="Escribir aquí"> <!--con el 'value' le damos ya un valor al input, el cual aparecera en la página web, este igual puede ser borrado-->
+        </section>
+    </article>
+    <br><br>
+
+
+    <section style="background-color:  white;">
+        CLASS
+        <h1 class="Class">Título h1 con atributo class="Class"</h1>
+        <p class="class"->
+            Párrafo con atributo class="class"
+        </p>
+        <h2 class="Class">Título h2 con atributo class="Class"</h2>
+        <p class="class"->
+            Párrafo con atributo class="class"
+        </p>
+    </section>
+    <br><br>
+
+
+    <section style="background-color:  white;">
+        ID
+        <h1 id="Id">Título h1 con atributo id="Id"</h1>
+        <p id="id">
+            Párrafo p con atributo id="id"
+        </p>
+        <h2 id="Id">Título h2 con atributo id="Id"</h2>
+        <p id="id">
+            Párrafo p con atributo id="id"
+        </p>
+    </section>
+    <br><br>
+
+
+    <div style="border-width: 4px; border-style: double;">
+        <div>
+            <h3>[href]</h3>
+            <a href>Enlace a y atributo ' href ' sin darle valor</a><br>
+            <a>Enlace a y sin atributo</a><br>
+            <p>
+                En el primero da el css porque tiene el atributo ' href ' y cambia de color. 
+        </p><p> En el segundo enlace ya que no encontramos el atributo ' href ' no se le aplica ninguna regla.
+            </p>
+        </div>
+        <br>
+
+        <div>
+            <h3>[href="valor"]</h3>
+            <a href="valor">Enlace a y atributo ' href="valor" '</a><br>
+            <a href="otrovalor">Enlace a y atributo ' href="otrovalor" '</a>
+            <p>
+                En el primer enlace da el css porque el atributo ' href="valor" '. 
+        </p><p> En el segundo se aplica otro color ya que tiene el atributo ' href ' pero como ' href="otrovalor" ' no se da el css de su enlace de arriba ya que no es el mismo valor
+            </p>
+        </div>
+        <br>
+
+        <div>
+            <h3>[href^="https://"]</h3>
+            <a href="https://gmail">Enlace a y atributo ' href="https://gmail" '</a><br>
+            <a href="//gmail">Enlace a y atributo ' href="//gmail" '</a><br>
+            <p>
+                En el primero se aplica el css porque el valor del atributo ' href="https://gmail" ' comienza con " https:// ". 
+        </p><p> En el segundo se aplica otro color ya que tiene el atributo ' href ', pero como ' href="//gmail" ' no comienza con " https:// " no se da el css de su enlace de arriba.
+            </p>
+        </div>
+        <br>
+
+        <div>
+            <h3>[href*="palabra"]</h3>
+            <a href="//palabra.es">Enlace a y atributo ' href="//palabra.es" '</a><br>
+            <a href="//Palabra.es">Enlace a y atributo ' href="//Palabra.es" '</a><br>
+            <a href="//amazon.es">Enlace a y atributo ' href="//amazon.es" '</a>
+            <p>
+                En el primero se aplica el css porque el valor del atributo ' href="//palabra.es" ' contiene " palabra ". 
+        </p><p> En el segundo se aplica otro color ya que tiene el atributo ' href ' pero como ' href="//Palabra.es" ' no contiene " palabra " no se da el css de su enlace de arriba, como vemos no diferencia entre mayúsculas ni minúsculas.
+        </p><p> En el tercero se aplica otro color ya que tiene el atributo ' href ' pero como ' href="//amazon.es" ' no contiene " palabra " no se da el css de su enlace de arriba.
+            </p>
+        </div>
+        <br>
+
+        <div>
+            <h3>[href$=".com"]</h3>
+            <a href="//gmail.com">Enlace a y atributo ' href="//gmail.com" '</a><br>
+            <a href="//gmail">Enlace a y atributo ' href="//gmail" '</a>
+            <p>
+                En el primero se aplica el css porque el valor del atributo ' href="//gmail.com" ' termina con " .com ". 
+        </p><p> En el segundo se aplica otro color ya que tiene el atributo ' href ', pero como ' href="//gmail" ' no termina con " .com " no se da el css de su enlace de arriba.
+            </p>
+        </div>
+        <br>
+    </div>
+
+
+    <div>
+        <p lang="en">
+            Párrafo p con atributo lang="en"
+        </p>
+        <p lang="en-GB">
+            Párrafo p con atributo lang="en-GB"
+        </p>
+        <p lang="en-LO">
+            Párrafo p con atributo lang="en-LO"
+        </p>
+        <p lang="es">
+            Párrafo p con atributo lang="es"
+        </p>
+        <p lang="es-MA">
+            Párrafo p con atributo lang="es-MA"
+        </p>
+        <p lang="es-AN">
+            Párrafo p con atributo lang="es-AN"
+        </p>
+    </div>
+
+</body>
+</html>

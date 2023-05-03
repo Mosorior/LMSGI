@@ -1,0 +1,93 @@
+/* apartado1.css */
+h1
+{
+	text-align: center;
+}
+
+img
+{
+	float: right;
+	widows: 20%;
+}
+
+aside h2
+{
+	text-align: center;
+}
+
+p.relleno
+{
+	color:green;
+	text-decoration-style: italic;
+	margin: 30px,30px,30px,30px;
+}
+
+.inicio , .final
+{
+	background-color: yellow;
+}
+
+
+ul.menu {
+  border: 5px solid purple;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul.menu li {
+  float: left;
+  width: 20%;
+  text-align:center;
+  text-decoration-color: purple;
+}
+ul.menu li a {
+  border-left: 5px purple;
+  border-right: 5px solid purple;
+  color: #333;
+  display: block;
+  padding: .3em;
+  text-decoration: none;
+}
+
+.menu li a::hover
+{
+	background-color: blue;
+	margin-left:1em;
+}
+#principal h2
+{
+	text-align: center;
+	background-color: purple;
+	color: white;
+	text-decoration: italic;
+	padding:10px;
+	margin-left: 20%;
+	margin-right: 20%;
+	box-shadow: 20px 10px 5px violet;
+
+}
+
+#principal p.agua
+{
+	background:url(../fotos/agua.png);
+	padding:10px;
+	margin:20px;
+}
+
+a[href$=".zip"] {
+  background: url(../fotos/zip.png) no-repeat left center;
+  padding-left:20px;
+}
+
+h3
+{
+	border-right:dashed red ;
+	border-bottom: dashed red;
+}
+
+aside ol li:nth-child(2n+1)
+{
+	text-decoration-color: red;
+	text-align:center;
+}

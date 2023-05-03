@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplos uso Web Fonts</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="webfonts.css"> 
+</head>
+
+<body>
+
+  <h1>Uso de Web Fonts</h1>
+
+  <section class="googlefonts">
+    <h2>Bloque con fuente de google</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet magnam doloremque ab recusandae, quam ratione modi maxime ipsum neque aliquam exercitationem dolores autem quae aliquid architecto omnis quidem accusamus atque, deleniti voluptate distinctio cumque animi! Reiciendis animi aliquam dicta culpa odio, provident amet tempora voluptatum. Qui mollitia, velit adipisci doloribus.</p>
+  </section>
+
+  <section class="comic">
+    <h2>Bloque con fuente descargada de la web</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet magnam doloremque ab recusandae, quam ratione modi maxime ipsum neque aliquam exercitationem dolores autem quae aliquid architecto omnis quidem accusamus atque, deleniti voluptate distinctio cumque animi! Reiciendis animi aliquam dicta culpa odio, provident amet tempora voluptatum. Qui mollitia, velit adipisci doloribus.</p>
+  </section>
+
+  <section>
+
+    <h2 class="comic">Resumen</h2>
+
+    <h3>Google fonts o similares: fuentes online</h3>
+
+    <p>Se añade enlace a fichero con fuentes en el fichero HTML,y se usa en fichero CSS con el nombre de la fuente enlazada</p>
+
+    <pre><code>
+ &lt;!-- fichero HTML --&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css?family=<strong>Tangerine</strong>&quot;&gt;
+
+  /* fichero CSS */ 
+  .googlefonts { 
+    font-family: '<strong>Tangerine</strong>', serif; 
+  }    	
+    </code></pre>
+
+    <h3>@font-face</h3>
+    <p>En caso de disponer del fichero con la fuente se incluye dicha fuente con la directiva <code>@font-face</code>. El nombre que se le de en la directiva es el que se debe usar luego en la propiedad <code>font-family:</code></p>
+    <pre><code>
+      @font-face { 
+          font-family: <strong>nuevaFuente</strong>; 
+          src: url("mona_shark/Mona Shark.otf");
+      } 
+      .comic { 
+        font-family: <strong>nuevaFuente</strong>; 
+      }
+		</code></pre>
+
+    <h3>Enlaces</h3>
+    <ul>
+      <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+      <li><a href="http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp">@font-face</a></li>
+      <li><a href="http://www.dafont.com/es/">Dafont: fuentes para descargar</a></li>
+    </ul>
+  </section>
+</body>
+
+</html>

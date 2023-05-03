@@ -1,0 +1,10 @@
+.contact-form{
+    font-size: 25px;
+}
+.contact-form__h2{
+    font-size: 2em;       /*Tamaño de la fuente*/
+    font-family: Georgia, fantasy, serif; /*Tipografía de la fuente, al poner coma y otras tipografías indicamos varias fuentes para introducir, en el caso de que no estén alguna de ellas, siendo la de mayopr prioridad la primera escrita, después la segunda y así sucesivamente*/
+    /*Para introducir un tipo de letra de google hay que introducir el link que te da en la página html y a continuación introducimos la tipografía en 'font-family'*/
+    line-height: 1.9;     /*Altura de cada una de las letra, esta nace desde la mitad de la letra, es decir que 1cm de line height equivale a 0.5cm de media letra hacia arriba y 0.5cm de media letra hacia abajo*/
+    font-weight: 100;     /*Grosor de la fuente, no de la letra, por lo que dependiendo de la fuente esto podrá variar o no*/
+}

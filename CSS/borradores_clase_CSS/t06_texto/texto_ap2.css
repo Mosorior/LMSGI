@@ -1,0 +1,49 @@
+/* text-align: */
+h1 {
+    text-align: right; /* left|right|center|justify */
+    border-bottom: 1px solid black;
+}
+
+section p {
+    font-size: 24px;
+    text-align: justify;
+    line-height: 1.2em; /* line-height */
+    text-indent: 2em;
+}
+
+section strong {
+    /* text-decoration: underline;  
+    text-decoration-color: ;
+    text-decoration-style: double;
+    text-decoration-line: line-through; */
+    text-decoration: red double underline 2px;
+}
+
+section a {
+    text-decoration: none;
+}
+
+/* en general no tocar */
+section blockquote {
+    letter-spacing: -0.1em;
+    word-spacing: -0.5em;
+}
+
+section h2 {
+    word-spacing: 2em;
+    text-align: center;
+}
+
+/* pseudo elementos 
+  - first-line
+  - first-letter */
+
+section p::first-line {
+    color: red;
+}
+
+section p::first-letter {
+    color: blue;
+    font-weight: bold;
+    font-size: 2em;
+}

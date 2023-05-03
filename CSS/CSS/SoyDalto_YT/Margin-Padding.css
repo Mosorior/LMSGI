@@ -1,0 +1,35 @@
+*{
+    /*editar el tamaño del borde*/
+    border-width: 2px;
+    /*edita el tipo del borde*/
+    border-style: dotted;
+    /*edita el color de borde*/
+    border-color: azure;
+
+    border-radius: 20px;
+
+    border-bottom: 0px;
+    border-top: 0ch;
+
+
+    /*el 'margin' es la distancia que hay desde el borde hacia fuera*/
+    margin: 5px;             /*aplica 5 píxeles a cada lado*/
+    margin: 5px 10px;        /*esta regla representa eje horizontal y eje vertical, primero vertical(top-bottom), segundo vertical(right-left)*/
+    margin: 1px 2px 3px;     /*esta regla representa el primero top, el segundo representa el eje horizontal(left-right) y el tercero bottom*/
+    margin: 1px 2px 3px 4px; /*esta regla representa cada uno de los lados, siendo el primero top, segundo right, tercero borttom y cuarto left, orden como un reloj*/
+    margin-top:  5px;        /*Parte superior*/
+    margin-bottom: 5px;      /*Parte inferior*/
+    margin-left: 5px;        /*Parte izquierda*/
+    margin-right: 5px;       /*Parte derecha */
+
+
+    /*el 'pading' es la distancia que hay desde el borde hacia dentro*/
+    padding: 5px;             /*aplica 5 píxeles a cada lado*/
+    padding: 1px 2px 3px;     /*esta regla representa el primero top, el segundo representa el eje horizontal(left-right) y el tercero bottom*/
+    padding: 5px 10px;        /*esta regla representa eje horizontal y eje vertical, primero vertical(top-bottom), segundo vertical(right-left)*/
+    padding: 1px 2px 3px 4px; /*esta regla representa cada uno de los lados, siendo el primero top, segundo right, tercero borttom y cuarto left, orden como un reloj*/
+    padding-top: 5px;         /*Parte superior*/   
+    padding-bottom: 5px;      /*Parte inferior*/   
+    padding-left: 5px;        /*Parte izquierda*/    
+    padding-right: 5px;       /*Parte derecha*/
+}

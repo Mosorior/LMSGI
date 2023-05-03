@@ -1,0 +1,103 @@
+/* base.css */
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 0;
+    margin:auto;
+    list-style-type: none;
+    border: 1px solid blue;
+}
+nav ul li {
+    text-align: center;
+    border: 1px solid blue;
+}
+nav ul li:nth-child(3n+2)
+{
+	background-color: orange;
+}
+
+a[href$=".pdf"] 
+{
+background-image: url(../iconos/ftp.png);
+  background-repeat: no-repeat;
+  padding-left: 22px;
+}
+a[href$=".zip"] 
+{
+background-image: url(../iconos/ftp.png);
+  background-repeat: no-repeat;
+  padding-left: 22px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: brown;
+    display: block;
+}
+nav h2 {
+    display: none;
+}
+ h2.title::after {
+    content: " --- [title] ---- ";
+    background-color:yellow;
+    font-family: serif;
+}
+
+	p.revisar::after {
+    content: " --- [title] ---- ";
+    background-color:yellow;
+    font-family: serif;
+}
+h3.revisar:after {
+    content: " --- [revisar] ---- ";
+    background-color:yellow;
+    font-family: serif;
+}
+header  h1{
+text-align: right;
+}
+h1 + blockquote{
+	color:red;
+	border-left: 2px dotted green;
+	border-right: 2px dotted green;
+	text-align: center;  
+}
+blockquote cite{
+	color:green;
+}
+header#articulo h2 {
+	text-align: center;
+   color: orange;
+   background-color: white;
+   width: 70%;
+   margin: auto;
+   padding: 0.5em;
+   box-shadow: 20px 10px 5px orange;
+}
+h3.revisar+p{
+	text-decoration: line-through;
+}
+
+p.java
+{
+	background-color: black;
+	color:yellow;
+	background-image: url(../iconos/java.png);
+	 background-repeat: repeat-y;
+	 padding-right:22px;
+}
+.java::after {
+    content: " --- [java] ---- ";
+    background-color:yellow;
+    color:white;
+}
+
+h3 + p{
+text-decoration: line-through;
+}
+
+footer ul li a:hover {
+    color: blue;
+    background-color: cyan;
+    padding-right:1em;
+    margin:auto;
+}

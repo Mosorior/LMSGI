@@ -1,0 +1,121 @@
+/* apartado1.css */
+
+/* cita */
+blockquote {
+    border: 2px dashed red;
+    border-radius: 20px;
+    padding: 1em;
+    box-shadow: 30px 10px red;
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+/* título h1 */
+h1 {
+    text-align: right;
+    border-bottom: 1px solid #000;
+}
+
+/* Ejericio: modificar fuente  del h1 para usar Pacifico.. */
+@font-face {
+    font-family: fuenteExamen;
+    src: url("../fuentes/Pacifico/Pacifico-Regular.ttf");
+}
+
+h1 {
+    font-family: fuenteExamen,  cursive;
+}
+
+
+/* segun enunciado: la primera línea tras..*/
+
+section h2+p::first-line,
+section h3+p::first-line {
+    color: red;
+    text-transform: uppercase;
+}
+
+/* img que flotan */
+article:nth-of-type(even) img {
+    float: left;
+}
+
+article:nth-of-type(odd) img {
+    float: right;
+}
+
+img {
+    border: blue double 4px;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+/* decorar dt con flecha */
+
+dt {
+    background-image: url("../figuras/arrow-right-icon.png");
+    background-repeat: no-repeat;
+    padding-left: 16px;
+}
+
+/*contadores en dt y dd */
+dl {
+    counter-reset: ndt;
+}
+
+dt {
+    counter-increment: ndt;
+}
+
+dt {
+    counter-reset: ndd;
+}
+
+dd {
+  counter-increment: ndd;
+}
+
+dd::before {
+    content: counter(ndt) "." counter(ndd) " ";
+    background-color: lightgreen;
+}
+
+/* grid del footer */
+
+footer ol {
+    list-style-type: none;
+    padding-left: 0;
+    border: 1px solid red;
+    background-color: salmon;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+footer ol li {
+    border: 1px solid red;
+    text-align: center;
+}
+footer ol li a  {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+footer ol li:hover {
+    background-color: pink;
+}
+
+/* atributo title */
+[title]::after {
+    content: attr(title);
+    color: green;
+    font-style: italic;
+    font-size: 60%;
+    vertical-align: super;
+}
+
+/* lista numerada CON LETRAS */
+article ol {
+    list-style-type: upper-latin;
+    padding-left: 0;
+    list-style-position: inside;
+}

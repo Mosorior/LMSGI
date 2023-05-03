@@ -1,0 +1,69 @@
+/* avanzados.css */
+h1 {
+    color: blue;
+}
+
+/* selector hijo */
+section > p {
+    color:red;
+}
+/* selectyor descendente */
+section p {
+    font-style: italic;
+}
+
+
+/* selector adyacente "agrupado*/
+h2 + p, h3 + p {
+  text-decoration: underline;
+}
+/* h3 + p {
+    text-decoration: underline;
+} */
+
+/* ojo con adyancente: deben ser hermanos, al mismo nivel */ 
+article + h3 {
+  color: green;
+}
+
+
+/* atributos */
+[href] {
+    font-weight: bold;
+}
+[href="http://www.uca.es"] {
+    border: 2px solid green;
+}
+
+[title] {
+    border: 2px solid blue;
+}
+
+/* ^ para los enlaces que comiencen con lo escrito*/
+[href^="https://uca.es"]{
+    border: 6px dotted green;
+}
+
+/* * para los enlaces que contengan lo escrito*/
+[href*="https://uca.es/"]{
+   font-size: 200%; 
+}
+
+/* $ para los enlaces que terminen en lo escrito (.pdf)*/
+[href$=".pdf"]{
+  border-top: 4px red dashed; 
+}
+
+/*      NO USAR CLASES PARA ESTILIZAR ENLACES     */
+
+
+
+/*No se aplicaría a class="novedad"*/
+[class ="novedad"]{
+color: red;
+}
+
+/*Si se aplica a la class="novedad*/
+.novedad{
+color:red
+}

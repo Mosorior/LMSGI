@@ -1,0 +1,21 @@
+nav ol li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ol li a[href]::after {
+    content: " (url: "attr(href)" )";
+}
+
+.python::before {
+    background-color: yellow;
+    content: "Código Python";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+img, form {
+    display: none;
+}
+
+/* media="print" */

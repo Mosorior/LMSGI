@@ -1,0 +1,121 @@
+/* apartado2.css */
+
+/*Lista de empresa del grupo*/
+    footer > ul > li:nth-child(3n + 1) {
+        color: green;
+        font-style: italic;
+    }
+    footer > ul > li:nth-child(3n + 2) {
+        color: pink;
+        text-transform: uppercase;
+    }
+    footer > ul > li:nth-child(3n + 3) {
+        color: black;
+       
+    }
+
+
+
+/*Cabecera de nivel*/
+    @font-face {
+        font-family: Monoton;
+        src: url(Monoton/Monoton-Regular.ttf);
+    }
+
+    header > h1 {
+        font-family: Monoton;
+       
+        border: 2px solid black;
+        border-radius: 20px;
+
+        box-shadow: 40px 20px 7px black;
+
+        text-align: center;
+        word-spacing: 20px;
+
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+/*SECTION*/
+    section > p[title="ejemplo title en párrafo"] {
+        text-transform: uppercase;
+        font-style: italic;
+        text-align: right;
+        font-size: 88%;
+    }
+
+
+    section > article {
+        background-color: aqua;
+        background-image: url(../figuras/css-icon.png);
+        background-repeat: repeat-y;
+        background-position: bottom right;
+        padding-bottom: 72px;
+    }
+
+
+    /*Numeración de los enlaces de los artículos*/
+    p + article {
+        counter-reset: narticle;
+        counter-reset: na;
+    }
+    article {
+        counter-increment: narticle;
+        counter-reset: na;
+    }
+
+    a {
+        counter-increment: na;
+    }
+    article a::before{
+        content: "(" counter(narticle) "." counter(na) ")";
+    }
+
+
+    section > article a[href]::after {
+        content: "<" attr(href) ">";
+        color: orangered;
+        font-size: 50%;
+        vertical-align: top;
+        font-style: italic;
+    }
+
+
+
+
+
+    section img {
+        border: 2px solid blue;
+        padding: 1em;
+        margin: 1em;
+        float: left;
+    }
+
+
+
+
+
+    
+/*ASIDE*/
+    aside > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border: 1px solid red;
+        list-style-type: none;
+        padding-left: 0;
+        background-color: beige;
+    }
+    aside > ul > li {
+        border: 1px solid red;
+        text-align: center;
+        padding: 0.8em;
+    }
+    aside > ul > li > a {
+        text-decoration: none;
+        color: brown;
+        font-weight: bold;
+        display: block;
+    }

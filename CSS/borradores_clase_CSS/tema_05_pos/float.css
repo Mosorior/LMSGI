@@ -1,0 +1,45 @@
+/* para usar con texto */
+img.flota {
+    float: left;
+    padding: .2em; 
+} 
+
+p {
+    text-align: justify;
+}
+
+
+/* para layout, en desuso => mejor usar grid */
+aside, section{
+    width: 40%;
+    float: left;
+    padding: 1em;
+    box-sizing: border-box;
+}
+section {
+    width: 60%;
+    border-right: 4px dashed red;
+}
+
+/* para evitar que el footer "suba" */
+footer {
+    border-top: 4px solid blue;
+    clear: both;
+}
+
+/*  Ojo con float y contenedores que sólo tienen elementos flotantes
+  => sew convierte en contenedores vacíos de altura cero */
+nav {
+    border: 2px solid blue;
+    background-color: silver;
+    overflow: auto;
+    font-size: 2em;
+}
+
+nav span:nth-child(1) {
+    float: left;
+}
+nav span:nth-child(2) {
+    float: right;
+}
+

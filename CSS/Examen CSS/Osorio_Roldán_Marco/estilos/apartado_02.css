@@ -1,0 +1,62 @@
+/* apartado_02.css */
+@font-face {
+    font-family: fExamen;
+    src: url("../fuentes/TiltPrism.ttf");
+}
+#contenedor header {
+    font-family: fExamen;
+    text-align: center;
+}
+a[href$=".doc"], a[href$=".odt"]{
+    background-image: url(../figuras/doc.png);
+    background-repeat: no-repeat;
+    padding-left: 22px;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+a[href$=".doc"]::after, a[href$=".odt"]::after{
+    content: "(Destino: .doc)";
+    color: red;
+}
+nav ul li a {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+p.relleno{
+    font-style: italic;
+    color: grey;
+}
+p.relleno::before{
+    content: "-Texto relleno-";
+    background-color: black;
+    color: white;
+    font-family: serif;
+}
+section h2{
+    text-align: center;
+	background-color: turquoise;
+	color: white;
+	text-decoration: italic;
+	padding:10px;
+	margin-left: 20%;
+	margin-right: 20%;
+	box-shadow: 20px 10px 5px lightblue;
+    border-radius: 10px;
+    border-style:dotted;
+    border-color: black;
+}
+#tecnologia ol li:nth-child(2n+2) {
+text-decoration:line-through;
+text-decoration-color: red;
+}
+#tecnologia ol li:nth-child(3n+2) {
+        color: green;
+    }
+#principal section{
+    background-image: url(../figuras/news.png);
+    background-position-x: right;
+    background-repeat: repeat-y;
+}

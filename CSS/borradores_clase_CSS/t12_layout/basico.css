@@ -1,0 +1,39 @@
+/* basico.css */
+
+/* layout común */
+#contenedor {
+  background-color: silver;
+  margin: auto; /* centrar  */
+  width: 80%;
+  /* Probar uso de max-width y min-width */
+}
+  
+aside,
+nav,
+article {
+  padding: 0.5em;
+  border: 1px solid black;
+}
+
+
+/* colores para ver mejor los bloques*/
+
+article {
+  background-color: tomato;
+}
+
+nav {
+  background-color: #aa0;
+}
+
+aside {
+  background-color: #cc5;
+}
+
+footer {
+  background-color: green;
+}
+
+header {
+  background-color: yellow;
+}

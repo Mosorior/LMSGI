@@ -1,0 +1,42 @@
+b {
+    background-color: darkblue; /*Esto hará que se apliquen estas reglas a las etiquetas ' b '*/
+} 
+
+p b {
+    background-color: blue; /*Esto hará que se apliquen estas reglas a las etiquetas ' b ' que estén dentro de las etiquetas ' p '*/
+}
+
+div p b {
+    background-color: lightskyblue; /*Esto hará que se apliquen estas reglas a las etiquetas ' b ' que estén dentro de las etiquetas ' p ', que a su vez estén dentro de la etiqueta ' div '*/
+}
+
+
+*{
+    background-color: bisque;
+}
+
+.backred{
+    background-color: red;
+}
+
+article .backred .letterscyaninbackred{
+    color: cyan;
+}
+
+
+p:hover{
+    color: blueviolet;
+}
+
+div:hover{
+    background-color: aqua;
+}
+
+.backblack:hover{
+    background-color: black; color: white;
+}
+
+.letterscyaninbackred:hover{
+    
+    color: blueviolet;
+}

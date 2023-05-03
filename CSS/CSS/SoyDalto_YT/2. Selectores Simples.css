@@ -1,0 +1,97 @@
+/*SELECTORES SIMPLES*/
+
+
+
+    /*SELECTORES ELEMENTALES*/
+
+
+        /*Selector universal -> * */
+            /*A todo se le aplica las denominaciones que se asocian en dicha regla*/
+*{
+    background-color: rgb(248, 229, 201);  /*aplica un fondo _rojo_ a TODA la página web*/
+    color: black;            /*aplica a TODAS las letras el color _aqua_*/
+} 
+
+
+
+        /*Selector de tipo o etiqueta -> Nombre de la etiqueta*/
+            /*Según la etiqueta seleccionada, en este caso 'h1', se le aplican las denominaciones que estén dentro de su regla*/
+h1{
+    background-color: darkblue;
+}
+h2{
+    background-color: blue;
+}
+p{
+    background-color: lightseagreen;
+} 
+
+
+
+    /*SELECTORES DE ATRIBUTO*/
+
+
+        /*id -> id del elemento*/
+            /*Para el id hay que escribir siempre para aplicarle un '#' y a continuación el nombre del id al que le quieras aplicar las reglas, el nombre del id no diferencia entre mayúsculas y minúsculas*/
+            /*No debemos usar el id para más de dos etiquetas, esto es algo que esta mal visto, ya que posteriormente será un problema*/
+#Id{
+    background-color: darkorange;
+}
+#id{
+    background-color: lightsalmon;
+} 
+
+
+
+        /*clase -> clase del elemento*/
+            /*Para la clase hay que escribir siempre para aplicarle un '.' y a continuación el nombre de la clase al que le quieras aplicar las reglas, el nombre de la clase no diferencia entre mayúsculas y minúsculas*/
+.Class{
+    background-color: darkgreen;
+}
+.class{
+    background-color: lightgreen;
+}
+
+
+
+        /*Otros atributos */
+            /*Aplica las reglas a los atributos seleccionados con '[]', en este caso a los atributos 'href'*/
+[href]{
+    background-color: cyan;
+} 
+
+            /*Aplica las reglas al atributo seleccionado con dicho valor, en este caso a los atributos 'href' que tengan el valor de "https://google.com"*/
+[href="valor"]{
+    background-color: lightskyblue;
+} 
+
+            /*Aplica las reglas al atributo seleccionado que empiezen por la palabra seleccionada, con [^], en este caso a la palabra 'https'*/
+[href^="https"]{
+    background-color: darkgoldenrod;
+} 
+
+            /*Aplica las reglas al atributo seleccionado que contenga la palabra seleccionada, con [*], en este caso a la palabra 'palabra'*/
+[href*="palabra"]{
+    background-color: gold;
+} 
+
+            /*Aplica las reglas al atributo seleccionado que terminen por la palabra seleccionada, con [$], en este caso a la palabra '.com'*/
+[href$=".com"]{
+    background-color: yellow;
+} 
+
+            /*Aplica las reglas al lenguaje seleccionado, con [lang|="x"], un parrafo puede ser simplemente 'es' o más específico 'es-AN', si en la regla se pone simplemnete 'es' 
+            sin especificar no importa si el párrafo es 'es-AN' o 'es-BA', se aplican a ambos por ser 'es', si se especifica ya no se le aplicaría la regla al que se quede fuera*/
+[lang|="en"]{
+    background: white;
+}
+[lang|="es"]{
+    background: red;
+} 
+[lang|="es-MA"]{
+    background: yellow;
+}  
+
+
+/*Se sobreescriben los unos a los otros, es decir que si ponemos en el último uno que abarque a que todos sean escritos y anteriormente a cada uno le seleccionamos un color mediante sus reglas, 
+acabaran siendo del mismo color si la última regla coincide con todos los atributos*/

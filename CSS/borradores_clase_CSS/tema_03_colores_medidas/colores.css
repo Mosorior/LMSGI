@@ -1,0 +1,12 @@
+h1 {
+    color: #ff000033;  
+    /* opacity: 0.2;    */
+    /* color RGB: red green blue  1111 1111  0000 0000 0000 0000 */
+}
+p {
+    color:  blue;
+}
+
+img {
+    opacity: 90%;  /* porcentaje o valores entre 0 y 1 */
+}

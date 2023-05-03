@@ -1,0 +1,11 @@
+a img {
+    border: blue 1px solid;
+    box-shadow: 10px 15px 5px blue;
+}
+
+/* sí y sólo sí queremos que la imagen
+   se adapte al ancho disponible */
+img.rwd {
+    width: 60%;
+    height: auto;
+}

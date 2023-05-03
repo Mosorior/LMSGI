@@ -1,0 +1,77 @@
+/* enlaces.css */
+
+/* personalizar enlaces por tipo */
+
+/* modo a): con clases, ya obsoleto, mejor usar selector de atributo
+a.pdf {   ...} */
+
+/* b): con selector de atributo */
+a[href$=".pdf"] {
+    /* poner imagen de fondo */
+    background-image: url("https://icons.iconarchive.com/icons/hopstarter/soft-scraps/16/Adobe-PDF-Document-icon.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 18px;
+    border: 0;
+}
+
+section p a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid blue;
+}
+
+article a:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* al hacer clic */
+article a:active {
+    border: 2px red solid;
+}
+
+/* ojo con visited */
+article a:visited {
+    color: grey;
+    font-style: italic;  /* no se aplica !!! 
+    https://developer.mozilla.org/es/docs/Web/CSS/:visited */
+}
+
+/* hvover aplicado a otro elemento */
+h1:hover {
+    color: red;
+    text-align: center;
+}
+
+/* personalizar el subrayado 
+    a) con border 
+    b) con text-decoration */
+aside a {
+    text-decoration: none;
+    border-bottom: 4px red dashed;
+
+    /* padding-bottom: 12px; */
+}
+
+aside a.td {
+    border-bottom: 0;
+    text-decoration: 2px green double underline;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    border: 2px inset grey;
+    padding: .5em;
+    background-color: silver;
+}
+
+footer a:hover {
+    background-color: grey;
+}
+
+footer a:active {
+    border: outset;
+}

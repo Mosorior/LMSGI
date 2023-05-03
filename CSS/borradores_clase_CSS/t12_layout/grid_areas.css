@@ -1,0 +1,43 @@
+/* grid_areas.css */
+
+#contenedor {
+  display: grid;
+  grid-template-columns: 20% 50% 30%; /* o con fr: 3fr 5fr 2fr */
+
+
+  /* ¡¡ NOVEDAD!!: se define el layout con "nombres" */
+  grid-template-areas:
+    "cabecera   cabecera    cabecera"
+    "barra      articulo    ads"
+    "footer     footer      footer";  
+}
+
+/* asociamos elementos del grid-template-areas a elementos HTML */
+header {
+  grid-area: cabecera;
+}
+footer {
+  grid-area: footer;
+}
+article {
+  grid-area: articulo;
+}
+nav {
+  grid-area: barra;
+}
+aside {
+  grid-area: ads;
+}
+
+
+/* Para definir otro layout simplemente cambio grid-templates
+   (y grid-template-columns si cambia nº de columnas o reparto */
+
+/* Segundo layout: descomentar */
+/* #contenedor {
+  grid-template-areas:
+    "cabecera   cabecera    barra"
+    "ads        articulo    barra"
+    "footer     footer      footer";  
+  grid-template-columns: 30% 50% 20%;  
+} */

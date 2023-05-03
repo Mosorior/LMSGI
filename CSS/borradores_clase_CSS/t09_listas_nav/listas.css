@@ -1,0 +1,35 @@
+/* listas.css */
+
+/* estilo de la viñeta */
+ol {
+    list-style-type: lower-alpha; 
+    /* probar otros: upper-roman, decimal-leading-cero.. */
+}
+
+/* estilo de la viñeta */
+ul {
+    list-style-type: square; 
+    /* disc, circle, disclosure-open/close */
+}
+
+/* posición de la viñeta:
+ - en la zona de padding de la lista (outside) 
+ - o en la zona de contenido (inside)
+   se ve muy bien en inspector de elementos o con item de más de una línea */
+ul {
+    list-style-position: outside; /* inside|outside */
+}
+
+
+
+/* list-style-image */
+ul.img {
+    list-style-image: url("https://icons.iconarchive.com/icons/icojam/blue-bits/16/arrow-right-icon.png"); /* ruta absoluta o relativa */
+    list-style-type: circle; /* por si falla la imagen */
+    list-style-position: inside;
+}
+
+/* list-style shorthand: equivalente a anterior */
+/* ul.img {
+    list-style: inside disc url("https://icons.iconarchive.com/icons/icojam/blue-bits/16/arrow-right-icon.png") ;
+} */

@@ -1,0 +1,128 @@
+section#principal > .revisar {
+    color: grey;
+}
+
+abbr[title]::after, dfn[title]::after {  /* Si tiene este atributo [atributo] lo muestra, si no no */
+    content: attr(title);  /*contenido= el atributo "title"*/
+    font-size: 60%;        /*tamaño de la letra 60%*/
+    font-style: italic;    /*estilo de la letra "italic"*/
+    vertical-align: top;   /*texto se desplaza arriba*/
+    text-decoration: none; /*nada de decoración*/
+}/*Esto es para lo que va después de HTML y YAML*/
+
+abbr[title], dfn[title] {
+    text-decoration: none;  /*nada de decoración*/
+    background-image: url(../fig/books-icon.png);
+                            /*inserta detrás del selector la imagen "..."*/
+    background-position: left center;  /*para centrar la imagen*/
+    background-repeat: no-repeat;  /*para no repetir la imagen*/
+    padding: 16px;
+    margin: .5em;
+}
+
+/* NAV */
+
+nav {
+    margin-bottom: 1em;
+}
+
+nav ol {
+    background: #00ff00;
+    border: blue solid 1px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+    nav ol li {
+    float: left;
+    width: 20%;
+    }
+
+    nav ol li a {
+
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: blue solid 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    color: red;
+    display: block;
+}
+
+nav ol :nth-child(even) {
+    background-color: aqua;
+} 
+
+/* CSS */
+
+
+@font-face {
+    font-family: Creepster; /* nombre que le doy a la fuente */
+    src: url(./fuentes/Creepster/Creepster-Regular.ttf);
+}
+
+#principal > h2 {
+
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 4px solid red;
+    border-top: 4px solid red;
+    font-family: Creepster, serif;
+    font-size: 35px;
+
+    /* text-align: center;
+    border-top: red solid;
+    border-bottom: red solid;
+    font-family: Creepster;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 35px; */
+}
+
+/* Pre */
+
+pre {
+    background-color:black;
+    color: white;
+    background-image: url(../fig/python-icon.png);
+    background-repeat: repeat-x;
+    background-position: bottom right;
+    padding-bottom: 72px;
+}
+
+/* img */
+
+img {
+    float: right;
+    margin-right: 1.5em;
+    margin-left: 1em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    box-shadow: red 17px 15px 8px;
+    border: red 1px solid;
+    padding: 1em;
+}
+
+/* footer */
+
+footer ol {
+    list-style-type:lower-roman;
+}
+
+footer ol :nth-child(n+5) {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+/* form */
+
+input[type="search"]:focus{
+    
+    font-weight: bold;
+    background-color: brown;
+}

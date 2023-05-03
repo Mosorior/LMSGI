@@ -1,0 +1,11 @@
+abbr::after {
+    content: " (" attr(title) ") ";
+    color: green;
+    font-style: italic;
+}
+
+a[href]::after {
+    content: " <" attr(href) "> ";
+    font-style: italic;
+    font-size: 70%;
+}

@@ -1,0 +1,101 @@
+#container > * {
+  border: 5px blue dashed;
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+nav {
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
+}
+
+h2 {
+  grid-area: h2;
+}
+
+div {
+  grid-area: div;
+}
+
+article {
+  grid-area: article;
+}
+
+#derechos {
+  grid-area: derechos;
+}
+
+@media screen and (min-width: 760px) {
+  #container {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas: 
+    "header nav"
+    "section section"
+    "footer aside"
+    ;
+    
+  }
+
+  #container > * {
+    margin: 0.5em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #container {
+    background-color: crimson;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas: 
+    "header nav"
+    "section section"
+    "footer aside"
+    ;
+  }
+
+  #container > section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "h2 h2 h2"
+    "nav nav div"
+    "article article derechos"
+    ;
+  }
+
+  section > h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #container {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas: 
+    "nav header footer"
+    "section section footer"
+    "section section aside"
+    ;
+  }
+}

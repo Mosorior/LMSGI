@@ -1,0 +1,58 @@
+/* layout_areas.css */
+
+#contenedor {
+    /* limitar y centrar contenido */
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background-color: beige;
+
+    /* grid con áreas */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    " header     header"
+    " nav        section"
+    " aside      aside"
+    " footer     footer"
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    " nav      header    header"
+    " nav      section   section"
+    " aside    section   section"
+    " aside    footer    footer"   */
+    /* grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "header    header    section   section"
+    " nav      aside     section   section"
+    " nav      aside     section   section"
+    " nav      footer     footer    footer"   */
+}
+
+
+/* se asocian elementos html con 
+   los nombres de áreas usados en template */
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* colorines y border */
+#contenedor > *  {
+    border: 4px red double;
+}

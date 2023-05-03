@@ -1,0 +1,24 @@
+/* amplia.css */
+
+/* adyacente vs sibling */
+
+
+/* sibling */
+h2 ~ p {
+    color: green;
+}
+
+
+h2 + p {
+    color: blue;
+}
+
+/* otro ejemplo.  
+   ojo: 
+   - el h2 debe ser hermano 
+   - el h2 debe ser previo */
+h2 ~  h3 {
+    border-bottom: 2px solid black;
+}
+
+

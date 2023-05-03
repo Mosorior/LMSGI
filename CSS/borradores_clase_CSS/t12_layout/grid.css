@@ -1,0 +1,82 @@
+/* grid.css */
+
+/* https://www.quackit.com/css/grid/tutorial/ */
+
+#contenedor {
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr;  /* o en %: 20% 50% 30%;*/
+}
+
+/* Al definir el elemento como rejilla (display: grid) 
+   y la plantilla de columnas (grid-template-columns: 2fr 5fr 3fr;)
+    se forma una cuadricula de líneas ( se numeran a partir de 1).
+    Esas líneas se usan en propiedades grid-column y grid-row  para indicar
+   - dónde comienza / dónde termina (p.e. 1/4)
+   - donde comienza y a cuantas cuadriculas se expande (p.e 1/span 3)
+
+  Si hemos definido 3 columnas, las lineas van de 1 a 4
+
+    1             2                3            4
+  1 ---------------------------------------------
+    |             |                |            |
+  2 ---------------------------------------------
+    |             |                |            |
+  3 ---------------------------------------------
+    |             |                |            |
+  4 ---------------------------------------------
+
+  Si no se indica nada un bloque ocupa una zona, y empieza
+  a continuación del anterior.
+*/
+
+/* Primer layout:
+  - header en toda la primera fila: grid-column: 1 / 4; 
+  - footer en la última:  grid-column: 1 / span 3;  
+  - nav, aside y article no se tocan: una celda cada uno el
+     el orden en que aparecen en el HTML 
+  Nota:
+      grid-column: 1 / 4; 
+  equivale a 
+      grid-column-start: 1;
+      grid-column-end: 4;  
+*/
+
+header {
+  grid-column: 1 / 4; 
+}
+
+footer {
+  grid-column: 1 / span 3;  
+}
+
+/* Segundo layout: comentar anterior y descomentar siguientes reglas CSS.
+   El resultado: 
+    - el footer arriba gracias a grid-row: 1 
+    - la cabecera se reduce a una celda (grid-row no haría falta)
+    - aside y article se "expanden" hacia abajo para ocupar dos filas (grid-row: 2 / span 2;) 
+      (no hace falta grid-column porque me sirve el orden en que aparecen) 
+    - nav justo debajo de header, ocupa una celda 
+    */
+
+/* footer {
+  grid-row: 1;
+  grid-column: 1 / span 3;
+}
+header {
+  grid-column: 1;
+  grid-row: 2 ;
+}
+aside, article { 
+  grid-row: 2 / span 2; 
+}
+
+nav {
+  grid-column: 1;
+  grid-row: 3 ;
+} */
+
+
+
+
+
+

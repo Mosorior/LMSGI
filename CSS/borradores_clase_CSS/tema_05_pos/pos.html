@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Posicionamiento</title>
+  <link rel="stylesheet" href="pos.css">
+</head>
+
+<body>
+  <header>
+    <h1>Posicionamiento relativo y absoluto</h1>
+    <p>Aclaración a lo estudiado en librosweb: comparamos el posicionamiento relativo con el absoluto:</p>
+    <ul>
+      <li>Observando como en el primer caso no hay desplazamiento de los elementos contiguos (no se ocupa el espacio..).</li>
+      <li>Además se observa como en el absoluto la referencia en el desplazamiento depende de que los contenedores del elemento a desplazar tengan o no un posicionamiento distinto del normal.</li>
+    </ul>
+  </header>
+  <section id="novedades">
+    <h2> Relativo</h2>
+    <p>La segunda imagen de esta section tiene position: relative y top y left a 200px, con border amarillo.</p>
+    <p>El desplazamiento es respecto a su posición en estático o normal. No se "aprovecha" su hueco, los demas elementos no se desplazan.</p>
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img class="relativa" src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+  </section>
+  <section id="apuntes">
+    <h2> Absoluta respecto al body</h2>
+    <p>La segunda imagen tiene position: absolute y top y left a 200px. El border es naranja</p>
+    <p> <strong>El desplazamiento es respecto al primer contenedor con posicionamiento distinto de estático</strong>. Como la imagen está dentro de section (con estático), y la sección dentro del body, se posiciona respecto al body. <em>Además se "aprovecha" su hueco</em>, los demas elementos se desplazan para ocuparlo.</p>
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img class="absoluta" src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+  </section>
+  <section id="anexos">
+    <h2> Absoluta respecto a contenedor</h2>
+    <p>La segunda imagen tiene position: absolute y top y left a 200px. El border es lima</p>
+    <p>El desplazamiento es respecto al primer contenedor con posicionamiento distinto de estático. Como la imagen está dentro de una section con posicionamiento relativo y desplazamianto cero (no se usa top, left..), se posiciona respecto a dicha sección. Además, al igual que antes, se "aprovecha" su hueco, los demas elementos se desplazan para ocuparlo.</p>
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img class="absoluta" src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+    <img src="flamenco4.jpg" alt="flamanco bailaora con guitarrista" width="300" height="300" />
+  </section>
+</body>
+
+</html>

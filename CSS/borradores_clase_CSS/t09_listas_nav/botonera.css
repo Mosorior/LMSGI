@@ -1,0 +1,30 @@
+/* Reglas CSS para convertir lista en "botonera" */
+nav ul {
+    padding-left: 0;
+    list-style-type: none;
+    border: 1px solid #000000;
+    background-color: beige;
+}
+
+nav ul li {
+    text-align: center;
+    border: 1px solid #000000;
+    padding: 0.3em;
+}
+
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+}  
+
+/* decorativo para presentación */
+nav[class]::before {
+    content: "Tipo: " attr(class);
+    font-style: italic;
+}
+
+
+
+
+

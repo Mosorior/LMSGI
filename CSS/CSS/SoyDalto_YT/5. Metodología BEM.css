@@ -1,0 +1,7 @@
+.form__input--active{
+    color: red;
+}
+
+.form__input{
+    color: cyan;
+}

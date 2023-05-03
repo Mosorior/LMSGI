@@ -1,0 +1,88 @@
+/* selectores.css */
+
+/* selector de etiqueta o tipo */
+h1 {
+    color: red;
+}
+p {
+    color: blue;
+}
+/* selector universal:   */
+/*  se usa para "resetear" los estilos del navegador */
+* {
+    /* margin:0; */
+    font-style: italic;
+}
+
+/* selector descendente (descendiente a cualquier nivel */
+footer section p {
+    color: green;
+}
+/* selectores de clase */
+p.novedad {  /* elementos con atributo class="novedad" */
+   color: brown; 
+}    
+.revisar {
+    color: grey;
+}
+.test {
+    text-decoration: underline;
+}
+
+/* elemento de la clase test y de la clase revisar */
+.test.revisar { 
+    background-color: yellow;
+}
+
+
+/* selector de id */
+#contacto {
+    color: tomato;
+}
+
+
+/* agrupación de selectores */
+h1, h2, h3 {
+    border: 4px solid red;
+}
+/* h2 {
+    border: 2px solid blue;
+}
+h3 {
+    border: 2px solid blue;
+} */
+
+
+
+/* 
+p .novedad : 
+   cualquier elemento de la clase novedad dentro de párrafos 
+
+p.novedad: 
+  culaquier párrafo de la clase novedad
+*/
+
+
+/* 
+section.novedad  p  a.test {
+    color: red;
+
+    enlaces de la clase test dentro de párrafos y estos a su vez
+    dentro de secciones de la clase novedad
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+@font-face {
+  font-family: fuenteEspecial;
+  src: url(../fuentes/Pacifico/Pacifico-Regular.ttf);
+}
+
+*[title]::after {
+  content: attr(title);
+  background-color: yellow;
+  vertical-align: super;
+  font-size: small;
+  color: #008000;
+}
+
+section h2 + p::first-line, section h3 + p::first-line  {
+ color: red;
+ text-transform:uppercase;
+}
+
+article:nth-of-type(odd) > img {
+  float: right;
+}
+
+article:nth-of-type(even) > img {
+  float: left;
+}
+
+blockquote {
+  border: 2px palevioletred dotted;
+  border-radius: 10px;
+  padding: 2em;
+  box-shadow: 20px 20px palevioletred;
+  margin-right: 30em;
+  font-style: italic;
+}
+
+blockquote::before {
+  font-weight: bold;
+  content: "Cita: ";
+}
+
+cite {
+  display: block;
+}
+
+cite::before {
+  font-weight: bold;
+  content: "Autor: ";
+}
+
+img {
+  border: blue 6px double;
+}
+
+section > article {
+  background-image: url(../figuras/Peace-icon.png);
+  background-repeat: repeat-y;
+  padding-left: 33px;
+  margin: 3em;
+}
+
+dl {
+  counter-reset: contDT;
+}
+
+dt{
+  background-image: url(../figuras/arrow-right-icon.png);
+  background-repeat: no-repeat;
+  padding-left: 17px;
+
+  counter-reset: contDD;
+  counter-increment: contDT;
+}
+
+dd {
+  counter-increment: contDD;
+}
+
+dd::before {
+  content: counter(contDT) "." counter(contDD);
+  background-color: lime;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 4px double;
+  font-family: fuenteEspecial;
+}
+
+footer > ol {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 0%;
+}
+
+footer > ol > li {
+  background-color:rgb(250, 225, 112);
+  border: 1px green solid;
+  padding: 0px;
+  list-style: none;
+}
+
+footer > ol > li > a {
+  color: darkred;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  text-align: center;
+}

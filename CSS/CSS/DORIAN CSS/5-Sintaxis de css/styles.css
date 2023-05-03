@@ -1,0 +1,15 @@
+/* 
+*Selector:     El elemento al que vamos a aplicar estilos
+*Propiedad:    Lo que vamos a cambiar 
+*Valor:        El nuevo valor que va a tener
+*Denominación: = Propiedad:Valor
+*Regla:        Conjunto de selector+declaracion(es)
+
+Esctructura:
+
+                selector{           }
+[denominación1]   propiedad:valor;  }
+[denominación2]   propiedad2:valor; } regla, compuesta de 3 denominaciones con su selector 
+[denominación3]   propiedadN:valor; }
+                }                   }
+*/

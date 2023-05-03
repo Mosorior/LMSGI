@@ -1,0 +1,49 @@
+/* posicional.css */
+
+/* selectores nth-child */
+
+ul li:nth-child(2) {
+    /* color: red; */
+    border: 2px dotted green;
+}
+ul li:first-child {  /* li:nth-child(1)  *(/
+    /* color: red; */
+    color: red;
+}
+
+ul li:last-child {  /* li:nth-child(1)  *(/
+    /* color: red; */
+    color: blue;
+} 
+
+/* AN + B 
+  - A: tamaño del cilo 
+  - B: elemento de cada ciclo 
+*/
+/* ol li:nth-child( 3n + 3 ) {
+    color: palevioletred;
+} */
+/*
+   even === 2n +0
+   odd === 2n +1
+*/
+/* ol li:nth-child( odd ) {  
+    text-decoration: underline;
+} */
+
+/* desde y hasta un cierto elemento 
+   A: 1  desde
+   A: -1 hasta
+*/
+ol li:nth-child(n+4) {
+    color: red;
+}
+ol li:nth-child(-n+2) {
+    color: green;
+}
+
+/* ver diferencia con nt-child en este caso */
+p:nth-of-type(odd) {
+    color: blue;
+    font-weight: bold;
+}

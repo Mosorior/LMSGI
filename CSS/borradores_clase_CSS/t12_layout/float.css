@@ -1,0 +1,35 @@
+/* float.css */
+
+* {
+  /* Resuelve problema reparto % en flotantes,al aplicarla 
+     incluye border y padding en cálculo width.. 
+     bastaría aplicarla en elementso implicados en cálculo */
+  box-sizing: border-box;
+}
+
+/* Se aplica en bloque posterior a elementos flotantes */
+footer {
+  clear: both;
+}
+
+/* Para crear las columnas:
+ - las "flotamos"
+ - limitamos el ancho
+ */
+aside,
+nav {
+  float: left;
+  width: 25%;
+}
+
+article {
+  width: 50%;
+  float: left;
+}
+/* evita que elementos flotantes posteriores se superpongan con elemento previo,
+   provocando en este caso que el margen inferior del párrafo de la cabecera 
+   cree una zona de margin sin color (o color del fondo)
+*/
+header, footer {
+  overflow: auto; /* o auto */
+}

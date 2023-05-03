@@ -1,0 +1,53 @@
+b{
+    color: red;
+} 
+
+b{
+    color: green;
+}
+
+b{
+    color: blue;
+}
+
+/*Lo que ocurre es que primero se escribe el texto con etiqueta 'b' en rojo, después se pinta en verde y después en azul*/
+/*
+    La especifidad es la que trata de cambiar las propiedades sin afectar al resto
+
+    Rango de jerarquía:
+        1º !important
+        2º estilos en línea
+        3º Identificadores
+        4º clases / pseudo-clases / atributos
+        5º elementos / pseudo-elementos
+*/
+
+
+#pk{
+    color: cyan;
+}
+
+h1{
+    color: blue;
+}
+
+.colorred{
+    color: red;
+}
+
+h2{
+    color: green;
+}
+
+.colorred{
+    color: violet;
+}
+
+p{
+    color: aquamarine;
+}
+
+
+.important{
+    color: darksalmon !important;
+}

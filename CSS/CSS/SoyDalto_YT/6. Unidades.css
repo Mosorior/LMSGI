@@ -1,0 +1,57 @@
+/*
+    Exiten dos unidades de medida:
+        -Relativas, estas dependen de algo, son variables
+        -Fijas, estas son fijas como su nombre indicada
+*/
+
+
+.contact-form__h2{
+    font-size: 40px;
+} /*' font-size: ??px ' cambia el tamaño de la letra*/
+
+/*
+    Unidades de medida:
+        -px(píxeles)
+        -cm(centímetros)
+        -mm(milímetros)
+        -pt(puntos)
+*/
+
+
+.contact-form{
+    font-size: 5em;
+}
+
+/*
+    Cuando aplicamos 1em estamos dejando los valores de dicha página, si aplicamos 2em esos valores los multipicamos a dos
+        Ejemplo:
+        Tenemos un título, el cual por defecto tiene 16px, al aplicarle una regla de tamaño de 2em, le aplicamos 16px * 2 = 32px tendría el título
+        En cambio, si posterior le aplicamos al título un tamaño de 20px, al aplicarle una regla de tamaño de 2em, le aplicamos 20px * 2 = 40px tendría el título
+*/
+
+
+.p-16px{
+    font-size: 1em;
+} /*se queda igual ya que 1em es simplemente el valor de medida en pixeles que tiene, en este caso tiene 16px, por lo que cada em representa 16px*/
+
+.p-20px{
+    font-size: 20px;
+}
+
+b{
+    font-size: 2em;
+}
+
+*{
+    border-width: 1px;
+    border-style: dotted;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact-form {
+    font-size: 25px;
+    background-color: red;
+    width: 100vw; /*ancho*/
+    height: 75vh; /*alto*/
+}

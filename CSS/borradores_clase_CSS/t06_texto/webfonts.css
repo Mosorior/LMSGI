@@ -1,0 +1,47 @@
+/* webfonts.css */
+
+/* la fuente de Google se usa "directamente": 
+ está importada en el HTML con   
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+*/
+
+.googlev2 {
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+}
+
+.computer {
+    font-family: "Press Start 2P", cursive;
+}
+
+.googlefonts {
+    font-family: Tangerine, serif;
+}
+
+/* Fuente en fichero */
+
+/* a) definición de una fuente en fichero */
+@font-face {
+    font-family: nuevaFuente; /* le doy nombre */
+    src: url("mona_shark/Mona Shark.otf"); /* y localización */
+}
+
+/* b) uso de la fuente "nuevaFuente" (de fichero) */
+.comic {
+    font-family: nuevaFuente, serif;
+}
+
+/* Código auxiliar */
+pre {
+    color: blue;
+    margin-left: 10px;
+}
+
+pre strong {
+    background-color: yellow;
+}
+
+section {
+    border: 1px rebeccapurple dashed;
+    margin: 1em;
+}

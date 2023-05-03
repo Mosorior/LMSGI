@@ -1,0 +1,21 @@
+/* pseudo.css */
+
+@media print {
+    a[href]::after {
+        content: " <" attr(href) "> ";
+        font-style: italic;
+        font-size: 70%;
+    }
+}
+
+p:nth-of-type(1)::before {
+    content: "<párrafo> ";
+    font-style: italic;
+    color: blue;
+}
+
+p::after {
+    content: "<fin de párrafo> ";
+    color: red;
+    font-style: italic;
+}
