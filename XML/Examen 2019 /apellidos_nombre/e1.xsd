@@ -1,0 +1,104 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:simpleType name="langType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="es"/>
+      <xs:enumeration value="en"/>
+      <xs:enumeration value="fr"/>
+      <xs:enumeration value="ge"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="estiloType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="cita"/>
+      <xs:enumeration value="código"/>
+      <xs:enumeration value="revisar"/>
+      <xs:enumeration value="normal"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="dateType">
+    <xs:restriction base="xs:date"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="pageNumberType">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="100"/>
+      <xs:maxInclusive value="200"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="referenciaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="enlace" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="autorType">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="apellidos" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parrafoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="estilo" type="estiloType" default="normal"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="seccionType">
+    <xs:sequence>
+      <xs:element name="titulo" type="xs:string"/>
+      <xs:element name="parrafo" type="parrafoType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="bibliografiaType">
+    <xs:sequence>
+      <xs:element name="referencia" type="referenciaType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dedicatoriaType">
+    <xs:sequence>
+      <xs:element name="parrafo" type="parrafoType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="datos_proyectoType">
+    <xs:sequence>
+      <xs:element name="titulo" type="xs:string"/>
+      <xs:element name="autor" type="autorType" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="fecha_publicacion" type="dateType"/>
+      <xs:element name="paginas" type="pageNumberType"/>
+      <xs:element name="bibliografia" type="bibliografiaType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="apartadoType">
+    <xs:sequence>
+      <xs:element name="titulo" type="xs:string"/>
+      <xs:element name="seccion" type="seccionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="proyectoType">
+    <xs:sequence>
+      <xs:element name="datos_proyecto" type="datos_proyectoType"/>
+      <xs:element name="dedicatoria" type="dedicatoriaType" minOccurs="0"/>
+      <xs:element name="apartado" type="apartadoType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="lang" type="langType" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="proyecto" type="proyectoType"/>
+
+</xs:schema>
